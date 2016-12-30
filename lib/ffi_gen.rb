@@ -752,7 +752,7 @@ end
 if __FILE__ == $0
   FFIGen.generate(
     module_name: "FFIGen::Clang",
-    ffi_lib:     ["libclang-3.5.so.1", "libclang.so.1", "clang"],
+    ffi_lib:     ["libclang-3.8.so.1", "libclang.so.1", "clang"],
     headers:     ["clang-c/CXErrorCode.h", "clang-c/CXString.h", "clang-c/Index.h"],
     cflags:      `llvm-config --cflags`.split(" "),
     prefixes:    ["clang_", "CX"],
